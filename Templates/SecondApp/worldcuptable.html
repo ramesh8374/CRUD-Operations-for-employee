@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ICC ODI Worldcup 2023</title>
+    {% load static %}
+    <style>
+      table,th,td{
+      border: 1px solid black;
+      border-collapse: collapse;
+      text-align: center;
+      }
+      th{
+      background-color: green;
+      }
+      table{
+      border-radius: 10px;
+      }
+      td{
+      width:150px;
+      }
+
+    </style>
+</head>
+<body>
+<h3><ins>ICC Cricket World Cup 2023 - Points Table</ins></h3>
+<h4>Date:{{date}}------------Time:{{time}}</h4>
+  <table>
+    <tr>
+      <th>Teams</th>
+      <th>Mat</th>
+      <th>Won</th>
+      <th>Lost</th>
+      <th>Tied</th>
+      <th>NR</th>
+      <th>Points</th>
+      <th>NRR</th>
+    </tr>
+    <tr>
+      <td><img src="{% static 'images/ind.png' %}" style="height:50px;width:50px">India</td>
+      <td>3</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>6</td>
+      <td>+1.821</td>
+    </tr>
+    <tr>
+      <td><img src="{% static 'images/new.jpeg' %}" style="height:50px;width:50px">New Zealand</td>
+      <td>3</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>6</td>
+      <td>+1.604</td>
+    </tr>
+    <tr>
+      <td><img src="{% static 'images/sa.png' %}" style="height:50px;width:50px">South Africa</td>
+      <td>3</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4</td>
+      <td>+1.385</td>
+    </tr>
+    <tr>
+      <td><img src="{% static 'images/pak.png' %}" style="height:50px;width:50px">Pakistan</td>
+      <td>3</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4</td>
+      <td>-0.327</td>
+    </tr>
+    <tr>
+      <td><img src="{% static 'images/eng.jpeg' %}" style="height:50px;width:50px">England</td>
+      <td>3</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>-0.084</td>
+      <tr>
+      <td><img src="{% static 'images/afg.jpeg' %}" style="height:50px;width:50px">Afghanistan</td>
+      <td>3</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>-0.652</td>
+    </tr>
+    <tr>
+      <td><img src="{% static 'images/ban.jpeg' %}" style="height:50px;width:50px">Bangladesh</td>
+      <td>3</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>-0.699</td>
+    </tr>
+    <tr>
+      <td><img src="{% static 'images/aus.jpeg' %}" style="height:50px;width:50px">Australia</td>
+      <td>3</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>-0.734</td>
+    </tr>
+    <tr>
+      <td><img src="{% static 'images/ned.jpeg' %}" style="height:50px;width:50px">Netherlands</td>
+      <td>3</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>-0.993</td>
+    </tr>
+    <tr>
+      <td><img src="{% static 'images/sri.png' %}" style="height:50px;width:50px">Sri Lanka</td>
+      <td>3</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>-1.532</td>
+    </tr>
+    </tr>
+  </table>
+</body>
+</html>

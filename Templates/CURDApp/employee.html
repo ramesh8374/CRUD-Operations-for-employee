@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EMPLOYEE DETAILS</title>
+    <style>
+      table,th,td{
+      border: 1px solid black;
+      border-collapse: collapse;
+      text-align: center;
+      }
+      th{
+      background-color: green;
+      }
+      table{
+      border-radius: 10px;
+      }
+      td{
+      width:150px;
+      }
+
+    </style>
+</head>
+<body>
+<h1><ins>Employee Details</ins></h1>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Employee Name</th>
+      <th>Company Name</th>
+      <th>Employee Email</th>
+      <th>Phone Number</th>
+      <th>Employee Address</th>
+      <th>Employee Salary</th>
+    </tr>
+    <tr>
+      {% for e in emp %}
+      <td>{{forloop.counter}}</td>
+      <td>{{e.emp_name}}</td>
+      <td>{{e.com_name}}</td>
+      <td>{{e.emp_email}}</td>
+      <td>{{e.phone_number}}</td>
+      <td>{{e.emp_address}}</td>
+      <td>{{e.emp_salary}}</td>
+      <td><a href="/CURDApp/update/{{e.id}}">Edit</a></td>
+      <td><a href="/CURDApp/delete/{{e.id}}">Delete</a></td>
+    </tr>
+    {% endfor %}
+  </table><br><br>
+  <button value="Add Employee"><a href="/CURDApp/addemployee">Add Employee</a></button>
+</body>
+</html>
